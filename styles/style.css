@@ -1,21 +1,20 @@
 /* Fix this */
 * {
+  /*
   margin: 0;
   padding: 0;
+  */
 }
 
 html {
   font-family: sans-serif;
-  /* scroll-behavior: smooth; */
-  /* Unsupported for html selector? */
-  padding-top: 0;
-  background-color: black;
 }
 
 body {
   padding: 0;
   margin: 0;
-  color: white;
+  /* color: white; */
+  background-color: black;
 }
 
 h1 {
@@ -31,6 +30,7 @@ h1 {
   text-align: center;
   color: white;
   font-size: 300%;
+  margin-top: 4em;
 }
 
 #job-title {
@@ -43,7 +43,7 @@ h1 {
 }
 
 #contactme {
-  margin-top: 0;
+  margin-top: 2em;
   margin-bottom: 0;
 }
 
@@ -71,6 +71,7 @@ a {
   font-weight: 200;
   padding: 0em 0em;
   margin-top: 2em;
+  border: 1em;
 }
 
 a.orange {
@@ -99,6 +100,15 @@ a.black {
 
 a:hover {
   text-decoration: underline;
+  color: white;
+}
+
+a.green-hover:hover {
+  color: green;
+}
+
+a.red-hover:hover {
+  color: red;
 }
 
 div.status {
@@ -123,7 +133,7 @@ div.center {
 }
 
 div.page {
-  padding: 10em;
+  padding: 1em;
 }
 
 div.fs {
@@ -158,12 +168,12 @@ div.contact-box {
 
 .wrapper {
   display: grid;
-  /* grid-template-columns: all all; */
-  /* all all not valid */
-  grid-gap: 10px;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 500px));
   color: #444;
   margin: auto;
-  padding: 0;
+  padding: 0em 0em;
+  justify-content: center;
 }
 
 .box {
@@ -171,7 +181,60 @@ div.contact-box {
   color: #fff;
   border-radius: 5px;
   padding: 20px;
+  font-size: 120%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  margin-bottom: 0.5em;
+  /*
+  display: flex;
+  flex-wrap: wrap;
+  */
+}
+
+.project-title {
   font-size: 150%;
+}
+
+.project-info {
+  min-width: 200px;
+}
+
+.project-description {
+  grid-column: span 2;
+}
+
+.project-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  /* float: left; */
+}
+
+.project-bottom {
+  text-align: center;
+  /* display: flex; */
+  margin: auto;
+  margin-top: 1em;
+  /*
+  align-items: flex-end;
+  justify-content: flex-end; */
+}
+
+.project-button {
+  font-size: 0.7em;
 }
 
 form {
@@ -209,6 +272,15 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#portfolio-button {
+  opacity: 0.5;
+  color: black;
+  font-size: 2em;
+  margin-top: 1em;
+  font-family: monospace;
+  letter-spacing: 0.1em;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
