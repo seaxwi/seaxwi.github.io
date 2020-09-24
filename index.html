@@ -3,69 +3,118 @@
 <html lang="sv">
 
 <head>
-  <link rel="stylesheet" href="styles/style.css">
   <title>Sebastian Axel Wikström :: front-end developer</title>
+
+  <!-- Bootstrap: Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+  <!-- Ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Smooth scroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </head>
 
 <body>
   <div class="page fs bg">
     <h1 id="name">Sebastian Axel Wikstr&#246;m</h1>
     <h2 id="job-title">front-end developer</h2>
-    <p id="portfolio-link"><a href="#portfolio">[PORTFOLIO]</a></p>
+    <p id="portfolio-link"><a href="#portfolio"><i class="fa fa-chevron-down"></i></a></p>
+    <!--
+    <form action="#portfolio">
+      <input id="portfolio-button" type="submit" value="PROJECTS" />
+    </form>
+  -->
   </div>
 
   <div id="portfolio" class="page">
     <h1>Projects</h1>
 
-    <div class="wrapper center">
-      <div class="box a">
-        <img class="fl" src="djupvik.png" alt="">
-        <div class="fl project-info">
-          <h3>Djupviks Hamn</h3>
-          <p>HTML, CSS, Javascript</p>
-          <br>
-          <p>Website with responsive CSS<br> and JS-navbar.</p>
-          <br>
-          <a href="https://seaxwi.github.io/djupvik">DEMO</a>
-          <a href="https://github.com/seaxwi/djupvik">CODE</a>
+    <div class="wrapper">
+      <div class="box">
+        <div class="project-top">
+          <img class="project-image" src="djupvik.png" alt="">
+          <div class="flex-col">
+            <h3 class="project-item project-title">Djupviks Hamn</h3>
+            <p class="project-item">Tech: HTML, CSS, Javascript</p>
+            <p class="project-item">Website with responsive CSS and JS-navbar.</p>
+          </div>
+        </div>
+        <div class="project-bottom">
+          <a class="green-hover" href="https://seaxwi.github.io/djupvik"><i class="fa fa-external-link"></i> DEMO</a>
+          <a class="red-hover" href="https://github.com/seaxwi/djupvik"><i class="fa fa-code"></i> CODE</a>
         </div>
       </div>
-      <div class="box b">
-        <img class="fl" src="seaxwi.png" alt="">
-        <div class="fl project-info">
-          <h3>seaxwi.github.io</h3>
-          <p>HTML, CSS</p>
-          <br>
-          <p>Personal webpage.</p>
-          <br>
-          <a href="">[DEMO]</a>
-          <a href="https://github.com/seaxwi/seaxwi.github.io">CODE</a>
+      <div class="box">
+        <div class="project-top">
+          <img class="project-image" src="seaxwi.png" alt="">
+          <div class="flex-col">
+            <h3 class="project-item project-title">seaxwi.github.io</h3>
+          <p class="project-item">Tech: HTML, CSS</p>
+          <p class="project-item">Personal webpage built mainly in pure HTML/CSS with some JS-enhancements.</p>
+          </div>
+        </div>
+        <div class="project-bottom">
+          <a class="green-hover" href=""><i class="fa fa-external-link"></i> DEMO</a>
+          <a class="red-hover" href="https://github.com/seaxwi/seaxwi.github.io"><i class="fa fa-code"></i> CODE</a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="contact-box center">
-    <h1 id="contactme">Contact me</h1>
 
-    <form action="https://formspree.io/xbjpjpke" method="POST">
+    <div class="contact-box center">
+      <h1 id="contactme">Contact me</h1>
 
-      <label for="form-name">Name</label>
-      <input type="text" id="form-name" name="form-name" placeholder="Your name." required>
+      <form action="https://formspree.io/xbjpjpke" method="POST">
 
-      <label for="lname">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your email." required>
+        <label for="form-name">Name</label>
+        <input type="text" id="form-name" name="form-name" placeholder="Your name." required>
 
-      <label for="subject">message</label>
-      <textarea id="subject" name="subject" placeholder="Write a message." style="height:200px" required></textarea>
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email." required>
 
-      <input type="submit" value="Submit">
-    </form>
+        <label for="subject">message</label>
+        <textarea id="subject" name="subject" placeholder="Write a message." style="height:200px" required></textarea>
 
-    <h1 id="links">Links</h1>
-    <a href="https://github.com/seaxwi">
-      <img src="GitHub-Mark-Light-64px.png" alt="github mark">
-    </a>
-  </div>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h1 id="links">Links</h1>
+      <a href="https://github.com/seaxwi">
+        <img src="GitHub-Mark-Light-64px.png" alt="github mark">
+      </a>
+    </div>
+    </div>
 </body>
 
 </html>
