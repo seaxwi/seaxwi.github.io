@@ -1,235 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="sv">>
 <head>
-    <html lang="sv">
-</head>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-    font-family: sans-serif;
-    scroll-behavior: smooth;
-    padding-top: 0;
-    background-color: black;
-}
-body {
-    padding: 0;
-    margin: 0;
-    font-color: white;
-}
-
-h1 {
-  text-align:center;
-  color: white;
-  font-size: 300%;
-  margin: 0em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-#name {
-	text-align: center;
-    color: white;
-    font-size: 300%;
-}
-#job-title {
-  text-align:center;
-  color: white;
-  font-size: 150%;
-  font-weight: 200;
-  padding: 0em;
-  margin-top: 1em;
-}
-
-#contactme {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#links {
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-}
-
-p  {
-	text-align:left;
-    color: white;
-    font-size: 100%;
-}
-a {
-    color: white;
-	text-decoration: none;
-	font-size: 100%;
-}
-
-#portfolio-link {
-    text-align:center;
-    color: white;
-    font-size: 200%;
-    font-weight: 200;
-    padding: 0em 0em;
-    margin-top: 2em;
-}
-
-a.orange {
-    color: orange;
-}
-a.red {
-    color: red;
-}
-a.purple {
-    color: purple;
-}
-a.green {
-    color: green;
-}
-a.blue {
-    color: blue;
-}
-a.black {
-    color: black;
-}
-a:hover {
-    text-decoration: underline;
-}
-div.status {
-	text-align: center;
-    margin: auto;
-    width: 80%;
-    border: 0px solid green;
-    padding: 10px;
-}
-div.links {
-	text-align: center;
-    margin: auto;
-    width: 30%;
-    border: 0px solid green;
-}
-
-div.center {
-            margin: auto;
-            /* width: 50%; */
-            max-width: 40em;
-        }
-
-div.page {
-  padding: 10em;
-}
-
-div.fs {
-  height: 100vh;
-
-  /* retain height */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; 
-}
-
-div.bg {
-    /* center background */
-    background: url(start_background_bw.jpg) no-repeat center bottom; /* fixed */ 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-div.contact-box {
-  margin-bottom: 5em;
-}
-
-.fl {
-  float: left;
-}
-
-.project-info {
-  padding: 0 1em;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: all all;
-  grid-gap: 10px;
-  color: #444;
-  margin: auto;
-  padding: 0;
-}
-
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-
-form {
-  margin-top: 0;
-  margin-bottom: 2em;
-  padding: 0;
-  text-align: center;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: white;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: silver;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-footer {
-  min-height: 10em;
-  /*
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  */
-}
-
-img {
-  display: block;
-  margin: auto;
-}
-
-</style>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Sebastian Axel Wikström :: front-end developer</title>
 </head>
 <body>
-<div class="page fs bg">
+  <div class="page fs bg">
     <h1 id="name">Sebastian Axel Wikstr&#246;m</h1>
     <h2 id="job-title">front-end developer</h2>
     <p id="portfolio-link"><a href="#portfolio">[PORTFOLIO]</a></p>
-</div>
+  </div>
 
-<div id="portfolio" class="page">
+  <div id="portfolio" class="page">
     <h1>Projects</h1>
 
     <div class="wrapper center">
@@ -241,29 +24,28 @@ img {
           <br>
           <p>Website with responsive CSS<br> and JS-navbar.</p>
           <br>
-          <a href="https://seaxwi.github.io/djupvik">DEMO</a> 
+          <a href="https://seaxwi.github.io/djupvik">DEMO</a>
           <a href="https://github.com/seaxwi/djupvik">CODE</a>
         </div>
       </div>
       <div class="box b">
         <img class="fl" src="seaxwi.png" alt="">
         <div class="fl project-info">
-          <h3>seaxwi.com</h3>
+          <h3>seaxwi.github.io</h3>
           <p>HTML, CSS</p>
           <br>
           <p>Personal webpage.</p>
           <br>
-          <a href="">[DEMO]</a> 
+          <a href="">[DEMO]</a>
           <a href="https://github.com/seaxwi/seaxwi.github.io">CODE</a>
         </div>
       </div>
     </div>
-</div>
-<div class="contact-box center">
-  <h1 id="contactme">Contact me</h1>
+  </div>
+  <div class="contact-box center">
+    <h1 id="contactme">Contact me</h1>
 
-  <form
-    action="https://formspree.io/xbjpjpke"
+    <form action="https://formspree.io/xbjpjpke"
     method="POST">
 
     <label for="form-name">Name</label>
@@ -276,7 +58,6 @@ img {
     <textarea id="subject" name="subject" placeholder="Write a message." style="height:200px" required></textarea>
 
     <input type="submit" value="Submit">
-
   </form>
 
   <h1 id="links">Links</h1>
@@ -286,5 +67,3 @@ img {
 </div>
 </body>
 </html>
-
-
