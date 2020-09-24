@@ -1,22 +1,25 @@
-<style>
+/* Fix this */
 * {
   margin: 0;
   padding: 0;
 }
+
 html {
   font-family: sans-serif;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  /* Unsupported for html selector? */
   padding-top: 0;
   background-color: black;
 }
+
 body {
   padding: 0;
   margin: 0;
-  font-color: white;
+  color: white;
 }
 
 h1 {
-  text-align:center;
+  text-align: center;
   color: white;
   font-size: 300%;
   margin: 0em;
@@ -29,8 +32,9 @@ h1 {
   color: white;
   font-size: 300%;
 }
+
 #job-title {
-  text-align:center;
+  text-align: center;
   color: white;
   font-size: 150%;
   font-weight: 200;
@@ -48,11 +52,12 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-p  {
-  text-align:left;
+p {
+  text-align: left;
   color: white;
   font-size: 100%;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -60,7 +65,7 @@ a {
 }
 
 #portfolio-link {
-  text-align:center;
+  text-align: center;
   color: white;
   font-size: 200%;
   font-weight: 200;
@@ -71,24 +76,31 @@ a {
 a.orange {
   color: orange;
 }
+
 a.red {
   color: red;
 }
+
 a.purple {
   color: purple;
 }
+
 a.green {
   color: green;
 }
+
 a.blue {
   color: blue;
 }
+
 a.black {
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 div.status {
   text-align: center;
   margin: auto;
@@ -96,6 +108,7 @@ div.status {
   border: 0px solid green;
   padding: 10px;
 }
+
 div.links {
   text-align: center;
   margin: auto;
@@ -115,7 +128,6 @@ div.page {
 
 div.fs {
   height: 100vh;
-
   /* retain height */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,7 +136,8 @@ div.fs {
 
 div.bg {
   /* center background */
-  background: url(start_background_bw.jpg) no-repeat center bottom; /* fixed */
+  background: url(../start_background_bw.jpg) no-repeat center bottom;
+  /* fixed */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -145,7 +158,8 @@ div.contact-box {
 
 .wrapper {
   display: grid;
-  grid-template-columns: all all;
+  /* grid-template-columns: all all; */
+  /* all all not valid */
   grid-gap: 10px;
   color: #444;
   margin: auto;
@@ -169,14 +183,22 @@ form {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -214,4 +236,3 @@ img {
   display: block;
   margin: auto;
 }
-</style>
