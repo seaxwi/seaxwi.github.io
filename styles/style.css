@@ -196,6 +196,7 @@ div.contact-box {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+  max-width: 200px;
 }
 
 .project-item {
